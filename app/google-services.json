@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "2279867178",
+    "firebase_url": "https://milk-link.firebaseio.com",
+    "project_id": "milk-link",
+    "storage_bucket": "milk-link.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2279867178:android:daf5705a1e1b174c",
+        "android_client_info": {
+          "package_name": "com.MilkLink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2279867178-k1cjt4iqmvvgcp834j0do545luapj0f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7gdWn0OUsCSVD5SQCeI0g191jASzSpHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2279867178-k1cjt4iqmvvgcp834j0do545luapj0f9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2279867178:android:cb6e2708efae4ff3581453",
+        "android_client_info": {
+          "package_name": "com.example.fcmbasic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2279867178-k1cjt4iqmvvgcp834j0do545luapj0f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7gdWn0OUsCSVD5SQCeI0g191jASzSpHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2279867178-k1cjt4iqmvvgcp834j0do545luapj0f9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
