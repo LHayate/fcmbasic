@@ -15,6 +15,12 @@ import com.example.fcmbasic.MainActivity
 import com.example.fcmbasic.R
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
+import org.json.JSONException
+
+import org.json.JSONObject
+
+
+
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {
 
@@ -43,6 +49,18 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         if (remoteMessage.data.isNotEmpty()) {
             Log.d(TAG, "Message data payload: ${remoteMessage.data}")
 
+            try {
+                val data = JSONObject(remoteMessage.data as Map<*, *>)
+                val jsonMessage = data.getString("extra_information")
+                Log.d(
+                    TAG, """
+                     onMessageReceived: 
+                     Extra Information: $jsonMessage
+                     """.trimIndent()
+                )
+            } catch (e: JSONException) {
+                e.printStackTrace()
+            }
             if (/* Check if data needs to be processed by long running job */ true) {
                 // For long-running tasks (10 seconds or more) use WorkManager.
                 scheduleJob()
